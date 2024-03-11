@@ -1,17 +1,17 @@
 # Simple Calculator
 This code implements a basic calculator application using Python's Tkinter library.
 
-##Functionality:<br><br>
+## Functionality:<br><br>
 Users can enter numbers, operators (+, -, *, /, %), and parentheses.<br>
 The calculator displays the current expression in an entry field.<br>
 Clicking the equal sign (=) button evaluates the expression and displays the result.<br>
 A clear button (C) clears the expression.<br><br>
-##Code Breakdown:
+## Code Breakdown:
 
-###Importing Tkinter:<br>
+### Importing Tkinter:<br>
 
 from tkinter import Tk, Entry, Button, StringVar: Imports necessary classes for creating the graphical user interface (GUI).<br>
-###Calculator Class:
+### Calculator Class:
 <br>
 Defines a class named Calculator that represents the calculator functionality.
 __init__(self, master): Initializes the calculator object.
@@ -30,7 +30,7 @@ show(self, value): Appends the provided value (digit or operator) to the express
 clear(self): Clears the expression and display.
 solve(self): Attempts to evaluate the expression using eval and updates the display with the result.
 
-###Main Program:
+### Main Program:
 
 root = Tk(): Creates the main application window.
 Calculator = Calculator(root): Creates a Calculator object, passing the main window as reference.
