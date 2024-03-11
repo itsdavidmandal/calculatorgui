@@ -13,22 +13,22 @@ A clear button (C) clears the expression.<br><br>
 from tkinter import Tk, Entry, Button, StringVar: Imports necessary classes for creating the graphical user interface (GUI).<br>
 ### Calculator Class:
 <br>
-Defines a class named Calculator that represents the calculator functionality.
-__init__(self, master): Initializes the calculator object.
-master: Represents the main application window.
-Sets the window title, geometry (size and position), background color, and disables resizing.
-Creates a StringVar object (equation) to store the user's expression.
-Initializes an empty string (entry_value) for the current display value.
-Creates an Entry widget to display the expression and binds it to the equation variable.
-Creates multiple Button widgets with configurations for various functions:
-Number buttons (0-9) call the show method to append the digit.
-Operator buttons (+, -, *, /, %) call the show method to append the operator.
-Parenthesis buttons call the show method to append the parenthesis.
-C (Clear) button calls the clear method to clear the display.
-= (Equals) button calls the solve method to evaluate the expression.
-show(self, value): Appends the provided value (digit or operator) to the expression and updates the display.
-clear(self): Clears the expression and display.
-solve(self): Attempts to evaluate the expression using eval and updates the display with the result.
+Defines a class named Calculator that represents the calculator functionality.<br>
+__init__(self, master): Initializes the calculator object.<br>
+master: Represents the main application window.<br>
+Sets the window title, geometry (size and position), background color, and disables resizing.<br>
+Creates a StringVar object (equation) to store the user's expression.<br>
+Initializes an empty string (entry_value) for the current display value.<br>
+Creates an Entry widget to display the expression and binds it to the equation variable.<br>
+Creates multiple Button widgets with configurations for various functions:<br>
+Number buttons (0-9) call the show method to append the digit.<br>
+Operator buttons (+, -, *, /, %) call the show method to append the operator.<br>
+Parenthesis buttons call the show method to append the parenthesis.<br>
+C (Clear) button calls the clear method to clear the display.<br>
+= (Equals) button calls the solve method to evaluate the expression.<br>
+show(self, value): Appends the provided value (digit or operator) to the expression and updates the display.<br>
+clear(self): Clears the expression and display.<br>
+solve(self): Attempts to evaluate the expression using eval and updates the display with the result.<br>
 
 ### Main Program:
 
